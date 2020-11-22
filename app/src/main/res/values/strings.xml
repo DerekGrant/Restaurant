@@ -75,5 +75,7 @@
     <string name="p_name">P Name</string>
     <string name="prices">Prices</string>
     <string name="pay_now">Pay Now</string>
+    <string name="recent">Recently Order</string>
+    <string name="order_no"><![CDATA[Order No->]]></string>
 
 </resources>

@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView chin;
     Button order;
     public static int bill;
+    public static int count=0;
     public static String b="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {

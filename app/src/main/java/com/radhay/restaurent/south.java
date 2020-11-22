@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static com.radhay.restaurent.MainActivity.b;
 import static com.radhay.restaurent.MainActivity.bill;
+import static com.radhay.restaurent.MainActivity.count;
 
 public class south extends AppCompatActivity {
 Button order;
@@ -38,6 +40,8 @@ Button si;
                 System.out.println("ok");
                 b=b+"      sds@12 " + "S I Thali " + 150 + "/." + "\n";
                 System.out.println("then");
+                count+=1;
+                Toast.makeText(south.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         bp.setOnClickListener(new View.OnClickListener() {
@@ -45,7 +49,8 @@ Button si;
             public void onClick(View v) {
                 bill += 90;
                 b=b+"     sds@10 " + "Vada " + 90 + "/." + "\n";
-
+                count+=1;
+                Toast.makeText(south.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         dp.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +59,8 @@ Button si;
 
                 bill += 60;
                 b=b+"      sds@11 " + "Biryani " + 60 + "/." + "\n";
-
+                count+=1;
+                Toast.makeText(south.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         sp.setOnClickListener(new View.OnClickListener() {
@@ -62,7 +68,8 @@ Button si;
             public void onClick(View v) {
                 bill += 200;
                 b=b+"      sds@13 " + "Idli " + 200 + "/." + "\n";
-
+                count+=1;
+                Toast.makeText(south.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         si.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +77,8 @@ Button si;
             public void onClick(View v) {
                 bill += 70;
                 b=b+"     sds@14  " + "Dosa " + 70 + "/." + "\n";
-
+                count+=1;
+                Toast.makeText(south.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         order.setOnClickListener(new View.OnClickListener() {

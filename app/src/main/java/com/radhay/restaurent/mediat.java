@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import static com.radhay.restaurent.MainActivity.b;
 import static com.radhay.restaurent.MainActivity.bill;
+import static com.radhay.restaurent.MainActivity.count;
 
 public class mediat extends AppCompatActivity {
 Button order;
@@ -34,7 +36,9 @@ Button si;
             @Override
             public void onClick(View v) {
                 bill += 440;
-                b=b+"    fds@12 " + "Pizza " +440 + "/." + "\n";
+                 b=b+"    fds@12 " + "Pizza " +440 + "/." + "\n";
+                count+=1;
+                Toast.makeText(mediat.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         bp.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +46,8 @@ Button si;
             public void onClick(View v) {
                 bill += 266;
                 b=b+"     fds@10 " + "Feta" + 266 + "/." + "\n";
-
+                count+=1;
+                Toast.makeText(mediat.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         dp.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +56,8 @@ Button si;
 
                 bill += 350;
                 b=b+"    fds@11 " + "L & Y" + 350 + "/." + "\n";
+                count+=1;
+                Toast.makeText(mediat.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -59,7 +66,8 @@ Button si;
             public void onClick(View v) {
                 bill +=400;
                 b=b+"     fds@13 " + "Spanakopita " + 400 + "/." + "\n";
-
+                count+=1;
+                Toast.makeText(mediat.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         si.setOnClickListener(new View.OnClickListener() {
@@ -67,7 +75,8 @@ Button si;
             public void onClick(View v) {
                 bill += 430;
                 b=b+"     fds@14 " + "Baba Ganoush " + 430 + "/." + "\n";
-
+                count+=1;
+                Toast.makeText(mediat.this,count+"th Item Selected",Toast.LENGTH_SHORT).show();
             }
         });
         order.setOnClickListener(new View.OnClickListener() {
