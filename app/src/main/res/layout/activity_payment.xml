@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".payment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:textAlignment="center"
+        android:text="@string/p_code"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="151dp"
+        android:layout_height="37dp"
+        android:textAlignment="center"
+        android:text="@string/p_name"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:textAlignment="center"
+        android:text="@string/prices"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="20dp" />
+
+</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20sp"
+         android:textSize="16sp"
+         android:id="@+id/b"
+     />
+
+    </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/t1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pay_now"
+        android:textSize="20sp"
+        android:id="@+id/tn"
+        />
+</LinearLayout>
